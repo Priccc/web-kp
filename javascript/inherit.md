@@ -496,3 +496,67 @@ super相关：
  - super有两种调用方式：当成函数调用和当成对象来调用。
  - super当成函数调用时，代表父类的构造函数，且返回的是子类的实例，也就是此时super内部的this指向子类。在子类的constructor中super()就相当于是Parent.constructor.call(this)。
  - super当成对象调用时，普通函数中super对象指向父类的原型对象，静态函数中指向父类。且通过super调用父类的方法时，super会绑定子类的this，就相当于是Parent.prototype.fn.call(this)。
+
+
+## 多态
+
+多态的实际含义是：同一操作作用于不同的对象上，可以产生不同的解释和不同的执行结果。
+
+
+看下面的🌰，假设两只宠物， 一只小猫咪， 一只小狗， 现在要让他们发出叫声， 小猫咪需要"喵喵喵～"的叫，而小狗则要"汪汪汪！"。
+让它们叫就是同一操作，叫声不同就是不同的执行结果。
+
+让我们来理一下，我们需要：
+
+ - 一个发出声音的方法makeSound
+ - 一个猫的类Cat
+ - 一个狗的类Dog
+ - 当调用makeSound并且传入的是一只猫则打印出"喵喵喵～"
+ - 当调用makeSound并且传入的是一只狗则打印出"汪汪汪！"
+
+
+代码：
+```
+function makeSound (animal) {
+  if (animal instanceof Cat) {
+      console.log('喵喵喵～')  
+  } else if (animal instanceof Dog) {    
+    console.log('汪汪汪！')  
+  }
+}
+class Cat {}
+class Dog {}
+makeSound(new Cat()) // '喵喵喵～'
+makeSound(new Dog()) // '汪汪汪！'
+
+```
+
+虽然上面的代码具有多态性， 但是如果我们新增加了一个动物， 就需要修改makeSound方法， 久而久之， 这个代码就会越来越复杂， 这样并不是最好的办法
+
+
+其实多态最根本的作用就是<b>通过把过程化的条件语句转化为对象的多态性，从而消除这些条件分支语句</b>。 简而言之， 我们只需要把做什么和谁去做和怎么做区分开就好了
+
+就上面的例子， 动物都会叫， 但是具体怎么叫， 我们把他分配到每个类上面就好了
+
+```
+function makeSound (animal) {
+  if (animal.sound instanceof Function) {
+      animal.sound();
+  }
+}
+class Cat {
+  sound() {
+     console.log('喵喵喵～')  
+  }
+}
+class Dog {
+  sound() {
+     console.log('汪汪汪！')  
+  }
+}
+makeSound(new Cat()) // '喵喵喵～'
+makeSound(new Dog()) // '汪汪汪！'
+```
+
+多态的最根本好处在于，你不必再向对象询问“你是什么类型”而后根据得到的答
+案调用对象的某个行为——你只管调用该行为就是了，其他的一切多态机制都会为你安排妥当。
