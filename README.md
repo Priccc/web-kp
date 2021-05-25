@@ -9,6 +9,9 @@
 - [ ] [requestAnimationFrame？](./javascript/requestAnimationFrame.md)
 - [ ] [编写简单的JavaScript 模板引擎]()
 - [ ] [解决浮点数精度问题]()
+- [X] [js 继承](./javascript/inherit.md)
+- [X] [防抖和节流](./javascript/antiShake.md)
+- [X] [稀疏数组](./javascript/antiShake.md)
 
 ## 浏览器
 - [ ] [浏览器缓存？](./network/cache.md)
@@ -16,7 +19,6 @@
 - [ ] [从输入url到渲染成功，发生了什么]()
 - [ ] [回流与重绘]()
 - [ ] [观察者模式和发布订阅者模式]()
-- [X] [js 继承](./javascript/inherit.md)
 ## Vue
 
 ## Vue-Router
