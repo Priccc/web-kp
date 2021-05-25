@@ -11,7 +11,7 @@
 - [ ] [解决浮点数精度问题]()
 - [X] [js 继承](./javascript/inherit.md)
 - [X] [防抖和节流](./javascript/antiShake.md)
-- [X] [稀疏数组](./javascript/antiShake.md)
+- [X] [稀疏数组](./javascript/sparseArray.md)
 
 ## 浏览器
 - [ ] [浏览器缓存？](./network/cache.md)
