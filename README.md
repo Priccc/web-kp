@@ -14,7 +14,7 @@
 - [X] [稀疏数组](./javascript/sparseArray.md)
 
 ## 浏览器
-- [ ] [浏览器缓存？](./network/cache.md)
+- [X] [浏览器缓存](./network/cache.md)
 - [ ] [前端路由]()
 - [ ] [从输入url到渲染成功，发生了什么]()
 - [ ] [回流与重绘]()
