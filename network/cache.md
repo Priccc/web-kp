@@ -68,6 +68,8 @@ from disk cache和from memory cache
 
 Chrome的网络请求的Size会出现三种情况from disk cache(磁盘缓存)、from memory cache(内存缓存)、以及资源大小数值。
 
+tips: 内存缓存是响应速度最快的一种缓存。 内存缓存是快的，也是“短命”的。它和渲染进程“生死相依”，当进程结束后，也就是 tab 关闭以后，内存里的数据也将不复存在。
+
 浏览器读取缓存的顺序为memory –> disk。
 
 ![](https://pic1.zhimg.com/80/v2-fa21b4ae1b1c2ff3f696256684880864_1440w.jpg)

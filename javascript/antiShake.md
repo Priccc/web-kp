@@ -36,10 +36,12 @@ function fun(fn, delay) {
     if(timer) {
       clearTimeout(timer);
     }
-    fn.call(this, ...params);
     timer = setTimeout(() => {
       timer = null;
     }, delay);
+    if (!timer) {
+      fn.call(this, ...params);
+    }
   }
 }
 ```
