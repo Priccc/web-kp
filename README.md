@@ -23,6 +23,7 @@
 - [X] [Page Lifecycle API](./browser/lifecycleApi.md)
 
 ## Vue
+- [X] [Diff 算法](./vue/diff.md)
 
 ## Vue-Router
 
