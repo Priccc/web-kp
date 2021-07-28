@@ -6,7 +6,7 @@
 
 ## JavaScripe
 - [ ] [自己实现ajax请求？]()
-- [ ] [requestAnimationFrame？](./javascript/requestAnimationFrame.md)
+- [X] [requestAnimationFrame？](./javascript/requestAnimationFrame.md)
 - [ ] [编写简单的JavaScript 模板引擎]()
 - [ ] [解决浮点数精度问题]()
 - [X] [js 继承](./javascript/inherit.md)
@@ -19,7 +19,9 @@
 - [ ] [从输入url到渲染成功，发生了什么]()
 - [ ] [回流与重绘]()
 - [ ] [观察者模式和发布订阅者模式]()
-- [ ] [服务端渲染]
+- [ ] [服务端渲染]()
+- [X] [Page Lifecycle API](./browser/lifecycleApi.md)
+
 ## Vue
 
 ## Vue-Router
@@ -38,6 +40,6 @@
 - [ ] [在数组中找出和值为给定值的两个数]()
 
 ## 链表
-- [ ] [什么是链表？](./linkedList/listHasRing.md)
+- [X] [什么是链表？](./linkedList/listHasRing.md)
 - [ ] [如何判断一个链表是否有环？](./linkedList/listHasRing.md)
 
