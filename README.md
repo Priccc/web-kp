@@ -12,6 +12,8 @@
 - [X] [js 继承](./javascript/inherit.md)
 - [X] [防抖和节流](./javascript/antiShake.md)
 - [X] [稀疏数组](./javascript/sparseArray.md)
+- [X] [函数式编程](./javascript/functional.md)
+- [X] [Proxy](./javascript/proxy.md)
 
 ## 浏览器
 - [X] [浏览器缓存](./network/cache.md)
@@ -24,6 +26,7 @@
 
 ## Vue
 - [X] [Diff 算法](./vue/diff.md)
+- [X] [数据劫持](./vue/dataHijack.md)
 
 ## Vue-Router
 
