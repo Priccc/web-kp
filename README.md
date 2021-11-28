@@ -14,6 +14,7 @@
 - [X] [稀疏数组](./javascript/sparseArray.md)
 - [X] [函数式编程](./javascript/functional.md)
 - [X] [Proxy](./javascript/proxy.md)
+- [X] [CORS 跨域资源共享](./javascript/cors.md)
 
 ## 浏览器
 - [X] [浏览器缓存](./network/cache.md)
@@ -42,6 +43,7 @@
 - [ ] [实现一个并发调度器]()
 - [ ] [实现Add函数，可以同时满足add(2)(3)(5)...和add(2,3)(5,6)(7)...]()
 - [ ] [在数组中找出和值为给定值的两个数]()
+- [ ] [排序算法](./algorithm/sort.md)
 
 ## 链表
 - [X] [什么是链表？](./linkedList/listHasRing.md)
